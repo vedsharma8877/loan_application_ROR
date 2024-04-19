@@ -1,0 +1,11 @@
+<% flash.each do |name, msg| %>
+    <div x-data="{ open: true }" x-show="open" class="fixed bottom-0 right-0 m-4">
+      <div class="<%= name == 'alert' ? 'bg-red-500' : 'bg-green-500' %> text-white px-4 py-2 rounded shadow-md inline-flex items-center">
+        <div class="flex justify-between w-full">
+          <span class="mr-2"><%= msg %></span>
+          <button @click="open = false" class="text-white">&times;</button>
+        </div>
+      </div>
+    </div>
+  <% end %>
+  

@@ -1,0 +1,54 @@
+<div class="flex justify-around min-h-screen">
+    <dl class="max-w-md text-gray-900 divide-y divide-gray-200">
+        <div class="flex flex-col pt-3">
+            <dt class="mb-1 text-gray-500 md:text-lg">Loan Purpose</dt>
+            <dd class="text-lg font-semibold"><%= @loan.loan_purpose %></dd>
+        </div>
+        <div class="flex flex-col py-3">
+            <dt class="mb-1 text-gray-500 md:text-lg">Loan Amount</dt>
+            <dd class="text-lg font-semibold"><%= @loan.loan_amount %></dd>
+        </div>
+        <div class="flex flex-col py-3">
+            <dt class="mb-1 text-gray-500 md:text-lg">First Name</dt>
+            <dd class="text-lg font-semibold"><%= @loan.first_name %></dd>
+        </div>
+        <div class="flex flex-col py-3">
+            <dt class="mb-1 text-gray-500 md:text-lg">Last Name</dt>
+            <dd class="text-lg font-semibold"><%= @loan.last_name %></dd>
+        </div>
+        <div class="flex flex-col py-3">
+            <dt class="mb-1 text-gray-500 md:text-lg">Date of Birth</dt>
+            <dd class="text-lg font-semibold"><%= @loan.date_of_birth %></dd>
+        </div>
+        <div class="flex flex-col py-3">
+            <dt class="mb-1 text-gray-500 md:text-lg">Phone number</dt>
+            <dd class="text-lg font-semibold"><%= @loan.phone_number %></dd>
+        </div>
+    </dl>
+    <dl class="max-w-md text-gray-900 divide-y divide-gray-200">
+        <div class="flex flex-col pt-3">
+            <dt class="mb-1 text-gray-500 md:text-lg">Email address</dt>
+            <dd class="text-lg font-semibold"><%= @loan.email %></dd>
+        </div>
+        <div class="flex flex-col pt-3">
+            <dt class="mb-1 text-gray-500 md:text-lg">SSN</dt>
+            <dd class="text-lg font-semibold"><%= @loan.ssn %></dd>
+        </div>
+        <div class="flex flex-col pt-3">
+            <dt class="mb-1 text-gray-500 md:text-lg">Address Details</dt>
+            <dd class="text-lg font-semibold"><%= "#{@loan.street_address}, #{@loan.city}, #{@loan.state}, #{@loan.zip}" %></dd>
+        </div>
+        <div class="flex flex-col pt-3">
+            <dt class="mb-1 text-gray-500 md:text-lg">Annual Income</dt>
+            <dd class="text-lg font-semibold"><%= @loan.annual_income %></dd>
+        </div>
+        <div class="flex flex-col pt-3">
+            <dt class="mb-1 text-gray-500 md:text-lg">Employer Name</dt>
+            <dd class="text-lg font-semibold"><%= @loan.employer_name %></dd>
+        </div>
+        <div class="flex flex-col pt-3">
+            <dt class="mb-1 text-gray-500 md:text-lg">Employer Phone Number</dt>
+            <dd class="text-lg font-semibold"><%= @loan.employer_phone %></dd>
+        </div>
+    </dl>
+</div>
