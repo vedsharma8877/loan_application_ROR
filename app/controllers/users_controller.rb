@@ -21,7 +21,6 @@ class UsersController < ApplicationController
   private
 
   def check_user_role
-    puts 'Checking user role...'
     return if current_user&.has_role?(:admin)
     flash[:alert] = 'You do not have access to this page.'
     redirect_to root_path

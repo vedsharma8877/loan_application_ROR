@@ -13,7 +13,7 @@ class Loan < ApplicationRecord
     validates :state, presence: true, length: { maximum: 50 }
     validates :zip, presence: true, numericality: { only_integer: true }, length: { is: 5 }
     validates :annual_income, presence: true
-    validates :employer_name, presence: true, length: { maximum: 100 }, allow_blank: true
+    validates :employer_name, presence: true, length: { maximum: 100 }
     validates :employer_phone, presence: true,
     format: { with: /\A\(\d{3}\) \d{3}-\d{4}\z/, message: 'format should be (XXX) XXX-XXXX' }
 end
