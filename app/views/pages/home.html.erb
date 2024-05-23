@@ -6,10 +6,9 @@
         <h3 class="text-2xl mb-8 text-gray-200">
             Get quick and hassle-free loans for your needs.
         </h3>
-
-        <button class="bg-white font-bold rounded-full py-4 px-8 shadow-lg uppercase tracking-wider">
-            Apply Now
-        </button>
+        <% unless user_signed_in? %>
+        <%= link_to "Apply Now", new_user_registration_path, class: "bg-white font-bold rounded-full py-4 px-8 shadow-lg uppercase tracking-wider" %>
+        <% end %>
     </div>
 </div>
 <section class="container mx-auto px-6 p-10">
@@ -81,8 +80,8 @@
         <h3 class="my-4 text-2xl text-white">
             Apply now and avail of our exclusive loan deals!
         </h3>
-        <button class="bg-white font-bold rounded-full mt-6 py-4 px-8 shadow-lg uppercase tracking-wider">
-            Apply Now
-        </button>
+        <% unless user_signed_in? %>
+        <%= link_to "Apply Now", new_user_registration_path, class: "bg-white font-bold rounded-full mt-6 py-4 px-8 shadow-lg uppercase tracking-wider" %>
+        <% end %>
     </div>
 </section>
